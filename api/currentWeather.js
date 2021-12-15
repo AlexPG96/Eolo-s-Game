@@ -4,7 +4,8 @@ import axios from 'axios';
 export async function getCurrentWeather() {
     const currentWeather = await axios.get(`${API_URL}`, {params: {
         "id": MADRID_ID,
-        "appid": TOKEN
+        "appid": TOKEN,
+        
     },headers: {
       }
     });

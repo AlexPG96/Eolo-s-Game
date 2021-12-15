@@ -2,7 +2,44 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <p>Hola banner</p>
+                <div class="head-card">
+                    <h2>{{currentWeather.name}}, ES</h2>
+                    <p v-for="(data, index) in currentWeather.weather" :key="index">{{data.description}}</p>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div :class="this.iconClass"></div>
+
+                    </div>
+                    <div class="col-4">
+                        <p class="grades">{{this.celsius}}ºC</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-cells">
+                            <div class="table-cell pb-4">
+                                <p>Wind Speed</p>
+                                <p>{{this.windSpeed}}</p>
+                            </div>
+                            <div class="table-cell pb-4">
+                                <p>Rain</p>
+                                <p>{{this.humidity}}%</p>
+                            </div>
+                            <div class="table-cell pb-4">
+                                <p>Temp Min</p>
+                                <p>{{this.temp_min}}ºC</p>
+                            </div>
+                            <div class="table-cell pb-4">
+                                <p>Temp Max</p>
+                                <p>{{this.temp_max}}ºC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <p>Hola</p>
             </div>
         </div>
         <p>{{currentWeather}}</p>
@@ -16,17 +53,39 @@ export default {
     data() {
         return {
             currentWeather: [],
+            celsius: String,
+            temp_min: String,
+            temp_max: String,
+            humidity: String,
+            windSpeed: String,
+            iconClass: String,
+            datetime: String,
         }
     },
 
     async fetch() {
         this.currentWeather = await getCurrentWeather();
-        console.log(this.currentWeather);
+        this.currentWeather = this.currentWeather.currentWeather;
+
+        this.celsius = Math.round(this.currentWeather.main.temp - 273.15);
+        this.temp_min = Math.round(this.currentWeather.main.temp_min - 273.15);
+        this.temp_max = Math.round(this.currentWeather.main.temp_max - 273.15);
+
+        this.humidity = this.currentWeather.main.humidity;
+        this.windSpeed = this.currentWeather.wind.speed;
+
+        this.iconClass = this.currentWeather.weather[0].main.toLowerCase();
+
+        var date = new Date();
+
+        this.datetime = date.getHours();
+
+        if(this.datetime >= '08' && this.datetime <= '19'){
+            this.iconClass = this.iconClass + " day"
+        } else {
+            this.iconClass = this.iconClass + " night"
+        }
     },
 
 }
 </script>
-
-<style>
-
-</style>
