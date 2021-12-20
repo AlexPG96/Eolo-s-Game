@@ -1,21 +1,19 @@
 :root {
-    $brand-color: #f1c741;
+    $brand-color: #85C4A6;
     
     --color-primary: #{$brand-color};
     --color-primary-lighter: #{lighten($brand-color, 4%)};
     --color-primary-darker: #{darken($brand-color, 4%)};
     
-    --color-secondary-1: #f1fcfe;
-    --color-secondary-2: #fff9ff;
-    --color-secondary-3: #8fa2ba;
-    --color-secondary-4: #c7819f;
+    --color-background-1: rgba(47, 136, 93, 0.1);
+    --color-background-2: rgba(133, 196, 166,.3);
+
+    --color-secondary-1: #F7E613;
+    --color-secondary-2: #fac369;
+    --color-secondary-3: #ECA636;
+    --color-secondary-4: #E67734;
     
     --color-subtext-1: #8A98A8;
-
-    --button-color-primary: #9CDCFF;
-
-    --stain-color-primary: #e6f9fe;
-    --stain-color-secondary: #FDEEF1;
   
     --color-grey-1: #eaeaea;
     --color-grey-2: #cecece;
@@ -26,9 +24,9 @@
     --color-grey-7: #202021;
     --color-grey-8: #181819;
 
-    --box-shadow-primary: 0 0 0 .25rem rgba(241, 199, 65,.25);
-    --box-shadow-secondary-1: 3px 3px 10px 6px rgba(156, 220, 255,.35);
-    --box-shadow-secondary-2: 3px 3px 20px 3px rgba(0, 0, 0,.15);
+    --box-shadow-primary: 3px 3px 10px 3px rgba(133, 196, 166,.25);
+    --box-shadow-secondary-1: 3px 3px 20px 3px rgba(247, 230, 19,.15);
+    --box-shadow-secondary-2: 0 3px 10px 3px rgba(0, 0, 0,.25);
     
     --color-light: #fff;
     --color-light-muted: var(--color-grey-3);

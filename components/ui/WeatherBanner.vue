@@ -6,43 +6,47 @@
                     <h2>{{currentWeather.name}}, ES</h2>
                     <p v-for="(data, index) in currentWeather.weather" :key="index">{{data.description}}</p>
                 </div>
-                <div class="row">
-                    <div class="col-8">
+                <div class="row bannerRow">
+                    <div class="col-12 col-md-8">
                         <div :class="this.iconClass"></div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <p class="grades">{{this.celsius}}ºC</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="table-cells">
-                            <div class="table-cell pb-4">
-                                <p>Wind Speed</p>
+                            <div class="table-cell">
+                                <h6>Wind Speed</h6>
                                 <p>{{this.windSpeed}}</p>
                             </div>
-                            <div class="table-cell pb-4">
-                                <p>Rain</p>
+                            <div class="table-cell">
+                                <h6>Rain</h6>
                                 <p>{{this.humidity}}%</p>
                             </div>
-                            <div class="table-cell pb-4">
-                                <p>Temp Min</p>
+                            <div class="table-cell">
+                                <h6>Temp Min</h6>
                                 <p>{{this.temp_min}}ºC</p>
                             </div>
-                            <div class="table-cell pb-4">
-                                <p>Temp Max</p>
+                            <div class="table-cell">
+                                <h6>Temp Max</h6>
                                 <p>{{this.temp_max}}ºC</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <TomorrowBanner />
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6">
-                <p>Hola</p>
+                <Clock />
             </div>
         </div>
-        <p>{{currentWeather}}</p>
     </div>
 </template>
 

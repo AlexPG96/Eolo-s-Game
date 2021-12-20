@@ -7,11 +7,12 @@ html {
       box-sizing: border-box;
       -ms-word-wrap: break-word;
       word-wrap: break-word;
+      font-family: 'Montserrat', sans-serif;
     }
 }
 
 #app {
-  background: linear-gradient(to right, var(--color-secondary-1), var(--color-secondary-2));
+  background: linear-gradient(to bottom, var(--color-background-1), var(--color-background-2));
 
   .main {
     position: relative;

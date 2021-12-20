@@ -1,0 +1,93 @@
+.tomorrow {
+    border: 1px solid var(--color-primary-darker);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0.8rem;
+    height: 50px;
+    box-shadow: var(--box-shadow-secondary-2);
+
+    .tomorrow-grades {
+        font-weight: 700;
+    }
+
+    .clouds.day{
+        background: url(~/assets/svg/static/cloudy-day-1.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .clouds.night {
+        background: url(~/assets/svg/static/cloudy-night-1.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .clouds {
+        background: url(~/assets/svg/static/cloudy.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .clear.day {
+        background: url(~/assets/svg/static/day.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .clear.night {
+        background: url(~/assets/svg/static/night.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .rain.day {
+        background: url(~/assets/svg/static/rainy-1.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .rain {
+        background: url(~/assets/svg/static/rainy-5.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .snow.day {
+        background: url(~/assets/svg/static/snowy-1.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .snow {
+        background: url(~/assets/svg/static/snowy-5.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+    
+    .thunder {
+        background: url(~/assets/svg/static/thunder.svg) no-repeat center;
+        width: 55px;
+        height: 40px;
+        margin-top: -7px;
+        background-size: cover;
+    }
+}
