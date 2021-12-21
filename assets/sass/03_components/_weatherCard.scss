@@ -7,130 +7,141 @@
 
 
     .grades {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 300;
         margin-top: 50px;
     
+    }
+
+    .date { 
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: var(--color-grey-5);
+    }
+
+    .description {
+        text-transform: capitalize;
+        font-weight: 600;
     }
 
     .card-icon {
 
 
         .clouds.day{
-            background: url(~/assets/svg/static/cloudy-day-1.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/cloudy-day-1.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .clouds.night {
-            background: url(~/assets/svg/static/cloudy-night-1.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/cloudy-night-1.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .clouds {
-            background: url(~/assets/svg/static/cloudy.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/cloudy.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .clear.day {
-            background: url(~/assets/svg/static/day.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/day.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .clear.night {
-            background: url(~/assets/svg/static/night.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/night.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .rain.day {
-            background: url(~/assets/svg/static/rainy-1.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/rainy-1.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .rain {
-            background: url(~/assets/svg/static/rainy-5.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/rainy-5.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .snow.day {
-            background: url(~/assets/svg/static/snowy-1.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/snowy-1.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .snow {
-            background: url(~/assets/svg/static/snowy-5.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/snowy-5.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }
         }
         
         .thunder {
-            background: url(~/assets/svg/static/thunder.svg) no-repeat center;
-            width: 100%;
+            background: url(~/assets/svg/animated/thunder.svg) no-repeat center;
+            width: 80%;
             height: 150px;
             background-size: cover;
-            margin-top: 20px;
-        
+            margin: auto;
+
             @media (max-width: 400px) {
                 height: 165px;
             }

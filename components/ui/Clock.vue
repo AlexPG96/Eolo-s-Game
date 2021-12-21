@@ -1,5 +1,5 @@
 <template>
-    <div class="row-clock">
+    <div class="row-clock pb-5">
         <div class="alarm-clock">
             <div class="date">
                 <span class="month"></span>
