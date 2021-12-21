@@ -87,9 +87,6 @@ export default {
         const numberDayThree = date.getDate() + 2;
 
         const day = date.getDay();
-        const month = date.getMonth();
-        console.log(date);
-        console.log(days[day]);
 
         this.dayOne = {
             'humidity': this.previousWeather.list[7].main.humidity,
