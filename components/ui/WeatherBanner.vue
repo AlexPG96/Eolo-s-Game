@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <!-- <Clock /> -->
+                <Clock />
                 <WeatherCard />
             </div>
         </div>
