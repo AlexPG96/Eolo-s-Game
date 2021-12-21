@@ -1,4 +1,4 @@
-# weatherApp
+# EOLO'S GAME
 
 ## Build Setup
 
