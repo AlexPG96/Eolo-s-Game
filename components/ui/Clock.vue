@@ -1,16 +1,18 @@
 <template>
     <div class="row-clock">
-        <div class="clock">
-            <div class="hour">
-                <div class="hr" id="hr"></div>
+        <div class="alarm-clock">
+            <div class="date">
+                <span class="month"></span>
+                <span class="day"></span>,
+                <span class="year"></span>
             </div>
 
-            <div class="min">
-                <div class="mn" id="mn"></div>
-            </div>
-
-            <div class="sec">
-                <div class="sc" id="sc"></div>
+            <div class="time">
+                <span class="hours"></span>
+                <span class="colon">:</span>
+                <span class="minutes"></span>
+                <span class="colon">:</span>
+                <span class="seconds"></span>
             </div>
         </div>
     </div>
@@ -27,22 +29,51 @@ export default {
     },
 
     mounted() {
-        const deg = 6;
-        const hr = document.querySelector('#hr');
-        const mn = document.querySelector('#mn');
-        const sc = document.querySelector('#sc');
-        
-        setInterval(() =>{
-            let day = new Date();
-            let hh = day.getHours() * 30;
-            let mm = day.getMinutes() * deg;
-            let ss = day.getSeconds() * deg;
+        const hours = document.querySelector('.hours');
+        const minutes = document.querySelector('.minutes');
+        const seconds = document.querySelector('.seconds');
+        const month = document.querySelector('.month');
+        const day = document.querySelector('.day');
+        const year = document.querySelector('.year');
+
+        function setDate() {
+            const now = new Date();
+            const mm = now.getMonth();
+            const dd = now.getDate();
+            const yyyy = now.getFullYear();
+            const secs = now.getSeconds();
+            const mins = now.getMinutes();
+            const hrs = now.getHours();
+            const monthName = [
+                'January','February','March','April',
+                'May','June','July','August','September',
+                'October','November','December'
+            ];
             
-            hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
-            mn.style.transform = `rotateZ(${mm}deg)`;
-            sc.style.transform = `rotateZ(${ss}deg)`;
+            if (hrs > 12) {
+                hours.innerHTML = hrs;
+            } else {
+                hours.innerHTML = hrs;
+            }
             
-        })
+            if (secs < 10) {
+                seconds.innerHTML = '0' + secs;
+            } else {
+                seconds.innerHTML = secs;
+            }
+            
+            if (mins < 10) {
+                minutes.innerHTML = '0' + mins;
+            } else {
+                minutes.innerHTML = mins;
+            }
+            
+            month.innerHTML = monthName[mm];
+            day.innerHTML = dd;
+            year.innerHTML = yyyy;
+        }
+
+        setInterval(setDate,1000);
     }
 
 }

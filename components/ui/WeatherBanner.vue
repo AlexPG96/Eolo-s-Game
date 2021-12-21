@@ -44,7 +44,25 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <Clock />
+                <!-- <Clock /> -->
+                <WeatherCard 
+                    date="Decembre, 21"
+                    description="Clear"
+                    rainPercent="35"
+                    grades="11"
+                    iconClass="clouds day" />
+                <WeatherCard 
+                    date="Decembre, 21"
+                    description="Clear"
+                    rainPercent="35"
+                    grades="11"
+                    iconClass="clouds day" />
+                <WeatherCard 
+                    date="Decembre, 21"
+                    description="Clear"
+                    rainPercent="35"
+                    grades="11"
+                    iconClass="clouds day" />
             </div>
         </div>
     </div>
@@ -52,11 +70,13 @@
 
 <script>
 import { getCurrentWeather } from '~/api/currentWeather';
+import { getTomorrowWeather } from '~/api/tomorrowWeather';
 export default {
 
     data() {
         return {
             currentWeather: [],
+            previousWeather: [],
             celsius: String,
             temp_min: String,
             temp_max: String,
@@ -64,6 +84,9 @@ export default {
             windSpeed: String,
             iconClass: String,
             datetime: String,
+            dayOne: [],
+            dayTwo: [],
+            dayThree: [],
         }
     },
 
@@ -89,6 +112,15 @@ export default {
         } else {
             this.iconClass = this.iconClass + " night"
         }
+
+        // Próximos 4 días.
+
+        this.previousWeather = await getTomorrowWeather();
+        this.previousWeather = this.previousWeather.tomorrowWeather;
+        this.dayOne = this.previousWeather.list[7];
+        this.dayTwo = this.previousWeather.list[15];
+        this.dayThree = this.previousWeather.list[23];
+
     },
 
 }

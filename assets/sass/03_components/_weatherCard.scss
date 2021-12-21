@@ -1,0 +1,140 @@
+.weather-card {
+    border-radius: 25px;
+    padding: 0 0.8rem;
+    box-shadow: var(--box-shadow-secondary-2);
+    border: 1px solid var(--color-primary);
+    background-color: transparent;
+
+
+    .grades {
+        font-size: 3rem;
+        font-weight: 300;
+        margin-top: 50px;
+    
+    }
+
+    .card-icon {
+
+
+        .clouds.day{
+            background: url(~/assets/svg/static/cloudy-day-1.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .clouds.night {
+            background: url(~/assets/svg/static/cloudy-night-1.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .clouds {
+            background: url(~/assets/svg/static/cloudy.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .clear.day {
+            background: url(~/assets/svg/static/day.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .clear.night {
+            background: url(~/assets/svg/static/night.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .rain.day {
+            background: url(~/assets/svg/static/rainy-1.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .rain {
+            background: url(~/assets/svg/static/rainy-5.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .snow.day {
+            background: url(~/assets/svg/static/snowy-1.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .snow {
+            background: url(~/assets/svg/static/snowy-5.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+        
+        .thunder {
+            background: url(~/assets/svg/static/thunder.svg) no-repeat center;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            margin-top: 20px;
+        
+            @media (max-width: 400px) {
+                height: 165px;
+            }
+        }
+    }
+    
+}
