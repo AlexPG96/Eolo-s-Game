@@ -1,7 +1,7 @@
 // En este fichero JS definiremos las constantes globales de la app.
 
 // Url de la conexión API
-export const API_URL = "http://api.openweathermap.org/data/2.5"
+export const API_URL = "https://api.openweathermap.org/data/2.5"
 
 export const MADRID_ID = "3117732";
 
